@@ -7,6 +7,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+1) Requires Docker. Read *[here](https://docs.docker.com/engine/installation/) for docker installation.
+2) Then install docker-compose pip install docker-compose
+3) 
+
+
 What things you need to install the software and how to install them
 
 ```
