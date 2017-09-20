@@ -9,19 +9,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 1) Requires Docker. Read [here](https://docs.docker.com/engine/installation/) for docker installation.
 2) Install docker-compose 
-	terminal$  pip install docker-compose
+```
+terminal$  pip install docker-compose
+```
 3) Requires Git (if it is not already on your machine). Read [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for git installation.
 
- Clone Databox Git repo and run on your machine
-	terminal$ git clone https://github.com/me-box/databox.git
-
-
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 1) Clone Databox Git repo and run on your machine
