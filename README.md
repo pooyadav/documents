@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 1) Requires Docker. Read [here](https://docs.docker.com/engine/installation/) for docker installation.
-2) Install docker-compose 
+2) Once docker is installed and running, install  docker-compose 
 ```
 terminal$  pip install docker-compose
 ```
@@ -17,14 +17,13 @@ terminal$  pip install docker-compose
 
 ### Installing
 1) Clone Databox Git repo and run on your machine
-        terminal$ git clone https://github.com/me-box/databox.git
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+```
+        terminal$ git clone -b development  https://github.com/me-box/databox.git
+```
 
 ```
-Give the example
+     terminal$ cd databox
+     terminal$ ./start
 ```
 
 And repeat
