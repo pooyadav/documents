@@ -8,10 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 1) Requires Docker. Read [here](https://docs.docker.com/engine/installation/) for docker installation.
-2) Once docker is installed and running, install  docker-compose 
-```
-terminal$  pip install docker-compose
-```
+2) Once docker is installed and running, install  docker-compose. Read [here](https://docs.docker.com/compose/install/) for installation. 
 3) Requires Git (if it is not already on your machine). Read [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for git installation.
 
 
