@@ -21,20 +21,23 @@ These instructions will get you a copy of the project up and running on your loc
 ```
      terminal$ cd databox
      terminal$ ./databox-start
-
+     
+```
 ### Operation
 
 Once docker is installed, just run the following to get your databox up and
 running using images published to <https://hub.docker.com/r/databoxsystems>:
-
+```
     ./databox-start
+```    
 
-Once it's started point a web browser at <https://127.0.0.1:8989> and have fun.
+Once it's started point a web browser at <https://127.0.0.1:8989>.
 
 To stop databox and clean up,
+```
 
     ./databox-stop
-
+``` 
 ### Development
 
 To develop on the platform and core components run
@@ -48,6 +51,23 @@ it in `docker-compose-dev-local-images.yaml`. Your image will then be built
 alongside the platform. To install your app, upload the manifest to the local
 app store on <http://127.0.0.1:8181> and it should then become visible in the
 UI, ready for you to install.
+
+Databox has a number of platform components, detailed information about each can be found in their own  repositories:
+
+* [Databox container manager](https://github.com/me-box/databox) 
+
+* [databox-arbiter](https://github.com/me-box/databox-arbiter)
+
+* [node-databox]( https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
+
+* [databox-export-service](https://github.com/me-box/databox-export-service)
+
+* [databox-store-blob](https://github.com/me-box/databox-store-blob) An example of the databox store API
+
+* [databox-logstore](https://github.com/me-box/databox-logstore)
+
+* [databox-app-server](https://github.com/me-box/databox-app-server) Server for storing and serving databox manifests 
+
 
 
 ### Running the tests
@@ -66,23 +86,10 @@ tbh
 The list of [contributors](https://github.com/me-box/databox/contributors) who participated in this project.
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+tbh
 
 ## Acknowledgments
+tbh
 
- Databox has a number of platform components, detailed information about each can be found in their own  repositories:
 
-* [Databox container manager](https://github.com/me-box/databox) 
 
-* [databox-arbiter](https://github.com/me-box/databox-arbiter)
-
-* [node-databox]( https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
-
-* [databox-export-service](https://github.com/me-box/databox-export-service)
-
-* [databox-store-blob](https://github.com/me-box/databox-store-blob) An example of the databox store API
-
-* [databox-logstore](https://github.com/me-box/databox-logstore)
-
-* [databox-app-server](https://github.com/me-box/databox-app-server) Server for storing and serving databox manifests 
