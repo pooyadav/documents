@@ -1,5 +1,8 @@
 ### Source Code ###
+```
 sudo du -h -s * | sort -r
+```
+```
 884K	app-light-graph
 816K	driver-sensingkit
 5.2M	core-container-manager
@@ -33,4 +36,5 @@ sudo du -h -s * | sort -r
  16M	aarch64
  11M	node_modules
   0B	sdk
-
+62M 	total
+```
