@@ -15,65 +15,55 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 1) Clone Databox Git repo and run on your machine
 ```
-        terminal$ git clone -b development  https://github.com/me-box/databox.git
+        terminal$ git clone -b https://github.com/me-box/databox.git
 ```
 
 ```
      terminal$ cd databox
-     terminal$ ./start
-```
+     terminal$ ./databox-start
 
-And repeat
+### Operation
 
-```
-until finished
-`
+Once docker is installed, just run the following to get your databox up and
+running using images published to <https://hub.docker.com/r/databoxsystems>:
 
-End with an example of getting some data out of the system or using it for a little demo
+    ./databox-start
 
-## Running the tests
+Once it's started point a web browser at <https://127.0.0.1:8989> and have fun.
 
-Explain how to run the automated tests for this system
+To stop databox and clean up,
 
-### Break down into end to end tests
+    ./databox-stop
 
-Explain what these tests test and why
+### Development
 
-```
-Give an example
-```
+To develop on the platform and core components run
 
-### And coding style tests
+    ./databox-start dev
 
-Explain what these tests test and why
+This will clones all the relevant repositories locally, and builds them into the
+required Docker images. To try your component out, add your code into a
+directory with a Databox manifest and `Dockerfile`, and then add a reference to
+it in `docker-compose-dev-local-images.yaml`. Your image will then be built
+alongside the platform. To install your app, upload the manifest to the local
+app store on <http://127.0.0.1:8181> and it should then become visible in the
+UI, ready for you to install.
 
-```
-Give an example
-```
 
-## Deployment
+### Running the tests
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+tbh
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please see the current [issues](https://github.com/me-box/databox/issues). [Fork](https://github.com/me-box/databox#fork-destination-box) the databox repo and fix bugs/issues and submit pull request. Read more on Fork and Pull [here](https://help.github.com/articles/fork-a-repo/).
 
 ## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+tbh
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+The list of [contributors](https://github.com/me-box/databox/contributors) who participated in this project.
 
 ## License
 
@@ -81,10 +71,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
- files in the repository are general development guides and specs. Databox has a number of platform components, detailed information about each can be found in their own  repositories:
+ Databox has a number of platform components, detailed information about each can be found in their own  repositories:
 
 * [Databox container manager](https://github.com/me-box/databox) 
 
