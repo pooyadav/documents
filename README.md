@@ -35,7 +35,6 @@ Once it's started point a web browser at <https://127.0.0.1:8989>.
 
 To stop databox and clean up,
 ```
-
     ./databox-stop
 ``` 
 ### Development
@@ -52,13 +51,13 @@ alongside the platform. To install your app, upload the manifest to the local
 app store on <http://127.0.0.1:8181> and it should then become visible in the
 UI, ready for you to install.
 
-Databox has a number of platform components, detailed information about each can be found in their own  repositories:
+Databox has a number of platform components, divided into two parts:  Core and User components.
 
-* [Databox container manager](https://github.com/me-box/databox) 
+### Core Components
+
+* [Databox container manager](https://github.com/me-box/core-container-manager)
 
 * [databox-arbiter](https://github.com/me-box/databox-arbiter)
-
-* [node-databox]( https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
 
 * [databox-export-service](https://github.com/me-box/databox-export-service)
 
@@ -67,19 +66,35 @@ Databox has a number of platform components, detailed information about each can
 * [databox-logstore](https://github.com/me-box/databox-logstore)
 
 * [databox-app-server](https://github.com/me-box/databox-app-server) Server for storing and serving databox manifests 
+* 
+
+### User Components
+* [driver-os-monitor]()
+* [driver-twitter]()
+* [driver-sensingkit]()
+* [driver-google-takeout]()
+* [driver-phillips-hue]()
+
+
+### API libraries
+* [node-databox]( https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
+
 
 
 
 ### Running the tests
+```
+./databox-test
 
-tbh
+```
 
 ## Contributing
 
 Please see the current [issues](https://github.com/me-box/databox/issues). [Fork](https://github.com/me-box/databox#fork-destination-box) the databox repo and fix bugs/issues and submit pull request. Read more on Fork and Pull [here](https://help.github.com/articles/fork-a-repo/).
 
 ## Versioning
-tbh
+
+Current version
 
 ## Authors
 
