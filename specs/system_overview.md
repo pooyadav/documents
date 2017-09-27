@@ -1,2 +1,2 @@
-##DataBox System Design
+DataBox System Design
 
