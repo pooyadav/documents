@@ -73,7 +73,7 @@ Databox has a number of platform components, divided into two parts:  Core and U
 * [driver-google-takeout](https://github.com/me-box/driver-google-takeout)
 * [driver-phillips-hue](https://github.com/me-box/driver-phillips-hue)
 * [driver-os-monitor](https://github.com/me-box/driver-os-monitor)
-* [driver-twitter](https://github.com/me-box/driver-twitter
+* [driver-twitter](https://github.com/me-box/driver-twitter)
 * [driver-tplink-smart-plug](https://github.com/me-box/driver-tplink-smart-plug)    
 #### Apps 
 * [app-light-graph] https://github.com/me-box/app-light-graph
