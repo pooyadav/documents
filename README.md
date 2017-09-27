@@ -57,30 +57,35 @@ Databox has a number of platform components, divided into two parts:  Core and U
 
 * [Databox container manager](https://github.com/me-box/core-container-manager)
 
-* [databox-arbiter](https://github.com/me-box/databox-arbiter)
+* [databox-arbiter](https://github.com/me-box/core-arbiter)
 
-* [databox-export-service](https://github.com/me-box/databox-export-service)
+* [databox-export-service](https://github.com/me-box/core-export-service)
 
-* [databox-store-blob](https://github.com/me-box/databox-store-blob) An example of the databox store API
+* [databox-store-json](https://github.com/me-box/store-json)
 
-* [databox-logstore](https://github.com/me-box/databox-logstore)
+* [databox-store-timeseries](https://github.com/me-box/store-timeseries)
 
-* [databox-app-server](https://github.com/me-box/databox-app-server) Server for storing and serving databox manifests 
-* 
+* [databox-app-server](https://github.com/me-box/platform-app-server) Server for storing and serving databox manifests
 
 ### User Components
-* [driver-os-monitor]()
-* [driver-twitter]()
-* [driver-sensingkit]()
-* [driver-google-takeout]()
-* [driver-phillips-hue]()
-
-
-### API libraries
-* [node-databox]( https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
-
-
-
+#### Drivers
+* [driver-sensingkit](https://github.com/me-box/driver-sensingkit)
+* [driver-google-takeout](https://github.com/me-box/driver-google-takeout)
+* [driver-phillips-hue](https://github.com/me-box/driver-phillips-hue)
+* [driver-os-monitor](https://github.com/me-box/driver-os-monitor)
+* [driver-twitter](https://github.com/me-box/driver-twitter
+* [driver-tplink-smart-plug](https://github.com/me-box/driver-tplink-smart-plug)    
+#### Apps 
+* [app-light-graph] https://github.com/me-box/app-light-graph
+* [app-twitter-sentiment] https://github.com/me-box/app-twitter-sentiment
+* [app-os-monitor] https://github.com/me-box/app-os-monitor
+                
+### Libraries for writing drivers and apps
+* [lib-node-databox](https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
+* [lib-python-databox](https://github.com/me-box/lib-python-databox) python lib for databox apps and drivers
+* [lib-go-databox](https://github.com/me-box/lib-go-databox) go lib for databox apps and drivers
+#### API specifications
+tbh
 
 ### Running the tests
 ```
@@ -94,17 +99,15 @@ Please see the current [issues](https://github.com/me-box/databox/issues). [Fork
 
 ## Versioning
 
-Current version
+This documentation is up-to-date till this [commit](https://github.com/me-box/databox/tree/a62ed323d98c0a6fd32f020eca9352f8da687c09)
 
 ## Authors
 
 The list of [contributors](https://github.com/me-box/databox/contributors) who participated in this project.
 
 ## License
-tbh
+MIT Licence, See [here](https://github.com/me-box/databox/blob/master/LICENSE)
 
-## Acknowledgments
-tbh
 
 
 
