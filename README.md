@@ -28,20 +28,20 @@ These instructions will get you a copy of the project up and running on your loc
 Once docker is installed, just run the following to get your databox up and
 running using images published to <https://hub.docker.com/r/databoxsystems>:
 ```
-    ./databox-start
+  terminal$  ./databox-start
 ```    
 
 Once it's started point a web browser at <https://127.0.0.1:8989>.
 
 To stop databox and clean up,
 ```
-    ./databox-stop
+  terminal$  ./databox-stop
 ``` 
 ### Development
 
 To develop on the platform and core components run
 
-    ./databox-start dev
+  terminal$  ./databox-start dev
 
 This will clones all the relevant repositories locally, and builds them into the
 required Docker images. To try your component out, add your code into a
@@ -84,12 +84,12 @@ Databox has a number of platform components, divided into two parts:  Core and U
 * [lib-node-databox](https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
 * [lib-python-databox](https://github.com/me-box/lib-python-databox) python lib for databox apps and drivers
 * [lib-go-databox](https://github.com/me-box/lib-go-databox) go lib for databox apps and drivers
-#### API specifications
-tbh
+#### API and Sustem specifications
+For Databox System Design is find [here](https://github.com/pooyadav/documents/blob/master/specs/system_overview.md) and General API specifications are found [here](https://github.com/pooyadav/documents/blob/master/specs/api_specification.md)
 
 ### Running the tests
 ```
-./databox-test
+terminal$ ./databox-test
 
 ```
 
@@ -107,6 +107,32 @@ The list of [contributors](https://github.com/me-box/databox/contributors) who p
 
 ## License
 MIT Licence, See [here](https://github.com/me-box/databox/blob/master/LICENSE)
+
+## Known issues
+
+### Get Started with the Graphical SDK
+
+The graphical SDK will allow you to quickly build and test simple databox apps. Current version of SDK run bydefault in `dev` mode. To start the sdk run:
+```
+terminal$ ./databox-start sdk
+```        
+
+The SDK web UI is available at http://127.0.0.1:8086
+
+To stop the SDK run: 
+```
+terminal$ ./databox-stop sdk
+````
+
+### Develop system components and custom drivers
+
+To develop on the platform and  core components you can get error.
+
+``` TLS certificates invalid
+```
+
+  This is caused by starting Databox before docker has cleaned up the networks.
+  Should be fixed if you run `./databox-start`
 
 
 
