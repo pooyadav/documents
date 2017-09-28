@@ -99,7 +99,7 @@ Please see the current [issues](https://github.com/me-box/databox/issues). [Fork
 
 ## Versioning
 
-This documentation is up-to-date till this [commit](https://github.com/me-box/databox/tree/a62ed323d98c0a6fd32f020eca9352f8da687c09)
+This documentation is up-to-date till this [commit](https://github.com/me-box/databox/tree/a62ed323d98c0a6fd32f020eca9352f8da687c09). The master branches on all components points to the current release and are tagged in git using [semver](http://semver.org/).
 
 ## Authors
 
