@@ -1,9 +1,9 @@
 # DataBox
-The Databox platform is an open-source personal networked device, augmented by cloud-hosted services, that collates, curates, and mediates access to an individual’s personal data by verified and audited third party applications and services. The Databox will form the heart of an individual’s personal data processing ecosystem, providing a platform for managing secure access to data and enabling authorised third parties to provide the owner with authenticated services, including services that may be accessed while roaming outside the home environment. Databox project is led by Dr. Hamed Haddadi (Imperial College) in collaboration with Dr. Richard Mortier (University of Cambridge) and Professors Derek McAuley, Tom Rodden, Chris Greenhalgh, and Andy Crabtree (University of Nottingham) and funded by EPSRC. 
+The Databox platform is an open-source personal networked device, augmented by cloud-hosted services, that collates, curates, and mediates access to an individual’s personal data by verified and audited third party applications and services. The Databox will form the heart of an individual’s personal data processing ecosystem, providing a platform for managing secure access to data and enabling authorised third parties to provide the owner with authenticated services, including services that may be accessed while roaming outside the home environment. Databox project is led by Dr. Hamed Haddadi (Imperial College) in collaboration with Dr. Richard Mortier (University of Cambridge) and Professors Derek McAuley, Tom Rodden, Chris Greenhalgh, and Andy Crabtree (University of Nottingham) and funded by EPSRC. See http://www.databoxproject.uk/ for more information.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine. For development and testing purposes, see Development section.
 
 ### Prerequisites
 
@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 3) Requires Git (if it is not already on your machine). Read [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for git installation.
 
 
-### Installing
+### Installation
 1) Clone Databox Git repo and run on your machine
 ```
         terminal$ git clone -b https://github.com/me-box/databox.git
@@ -84,18 +84,20 @@ Databox has a number of platform components, divided into two parts:  Core and U
 * [lib-node-databox](https://github.com/me-box/node-databox) nodejs lib for databox apps and drivers
 * [lib-python-databox](https://github.com/me-box/lib-python-databox) python lib for databox apps and drivers
 * [lib-go-databox](https://github.com/me-box/lib-go-databox) go lib for databox apps and drivers
-#### API and Sustem specifications
-For Databox System Design is find [here](https://github.com/pooyadav/documents/blob/master/specs/system_overview.md) and General API specifications are found [here](https://github.com/pooyadav/documents/blob/master/specs/api_specification.md)
+#### API and System specifications
+Databox System Design document can be find [here](./documents/system_overview.md) and General API specifications are [here](./documents/api_specification.md).
 
 ### Running the tests
-```
-terminal$ ./databox-test
 
 ```
+terminal$ ./databox-test 
+
+```
+For more details, have a look [here](./documents/testing.md).
 
 ## Contributing
 
-Please see the current [issues](https://github.com/me-box/databox/issues). [Fork](https://github.com/me-box/databox#fork-destination-box) the databox repo and fix bugs/issues and submit pull request. Read more on Fork and Pull [here](https://help.github.com/articles/fork-a-repo/).
+The databox project welcomes contributions via pull requests see [CONTRIBUTING.md](./documents/CONTRIBUTING.md) for more information. Good start is from having a look on  the current [issues](https://github.com/me-box/databox/issues) and [forking](https://github.com/me-box/databox#fork-destination-box) the databox repo and fixing bugs/issues and submitting a pull request. Read more on Fork and Pull [here](https://help.github.com/articles/fork-a-repo/).
 
 ## Versioning
 
@@ -106,7 +108,7 @@ This documentation is up-to-date till this [commit](https://github.com/me-box/da
 The list of [contributors](https://github.com/me-box/databox/contributors) who participated in this project.
 
 ## License
-MIT Licence, See [here](https://github.com/me-box/databox/blob/master/LICENSE)
+MIT Licence, See [here](./LICENSE).
 
 ## Known issues
 
@@ -116,26 +118,20 @@ The graphical SDK will allow you to quickly build and test simple databox apps. 
 ```
 terminal$ ./databox-start sdk
 ```        
-
 The SDK web UI is available at http://127.0.0.1:8086
 
 To stop the SDK run: 
 ```
 terminal$ ./databox-stop sdk
 ```
-
 ### Develop system components and custom drivers
 
-*       To develop on the platform and core components you can sometimes get an error:
+*  To develop on the platform and core components you can sometimes get an error:
+```
+TLS certificates invalid
+```
+This is caused by starting Databox before docker has cleaned up the networks. 
+Should be fixed if you run `./databox-start`
 
-        ```
-                TLS certificates invalid
-        ```
-
-  This is caused by starting Databox before docker has cleaned up the networks.
-  Should be fixed if you run `./databox-start`
-
-*       In some cases, the time in docker containers on Mac can get out of sync with the system clock. This causes the HTTPS    
-        certs generated by the CM from being valid. See https://github.com/docker/for-mac/issues/17. Fix by restarting Docker for Mac.
-
-
+*  In some cases, the time in docker containers on Mac can get out of sync with the system clock. This causes the HTTPS 
+   certs generated by the CM from being valid. See https://github.com/docker/for-mac/issues/17. Fix this by restarting Docker for Mac.
